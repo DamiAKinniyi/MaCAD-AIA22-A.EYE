@@ -76,3 +76,7 @@ In this folder, geojson files for static layers are comtained.
     * &ensp;**Visual**  
         &emsp;"This layer shows diversity of visual accessibility by street, having attributes for name of streets, acoustic lights, and sidewalks."  
         &emsp;acc_visual_friendly.geojson (Show as geo: "visual_friendly_index" , Attributes: "name", "acoustic_lights", "tactile_sidewalks", "low_sidewalk")  
+
+
+* Link to dataset files from https://www.wien.gv.at/  
+https://drive.google.com/drive/folders/1t8pOWeBtw3k8oQXgImKqSKROAMOWgCiB?usp=sharing
