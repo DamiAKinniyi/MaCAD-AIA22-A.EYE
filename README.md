@@ -16,8 +16,7 @@ This project tackles the problem in two scales. One on hand, it maps the diversi
 ## **DATA COLLECTION & METRICS**
 The two main sources of data collection are [Vienna Open Gov Data](https://www.data.gv.at/suche/?searchterm=&searchin=data&publisherFilter[]=Stadt+Wien&publisherFilter_sub[]=Stadt+Wien) and [OpenStreetMap(OSM)](https://www.openstreetmap.org/#map=18/6.45722/3.38499). 
 
-- CITY GRAPH
-We extracted the MultiDi graph of the city from through osmnx library. 
+- **CITY GRAPH**: We extracted the MultiDi graph of the city from through osmnx library. 
 
 - **DEMOGRAPHICS**: We collected demographic data available from open gov data. While the information is rich and shows varieties in religion, income, age demographics, There were certain generalisations that excluded minority groups. For example, gender was classified as male and female, and ethnicity was reduced to just austrian and foreigners. 
 
