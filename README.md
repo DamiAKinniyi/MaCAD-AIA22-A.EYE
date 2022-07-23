@@ -13,7 +13,7 @@ This project tackles the problem in two scales. One on hand, it maps the diversi
 ![Methodology overview](/assets/Methodology.png)
 
 
-## **DATA COLLECTION & METRICS**
+## **DATA COLLECTION, ANALYSIS & METRICS**
 The two main sources of data collection are [Vienna Open Gov Data](https://www.data.gv.at/suche/?searchterm=&searchin=data&publisherFilter[]=Stadt+Wien&publisherFilter_sub[]=Stadt+Wien) and [OpenStreetMap(OSM)](https://www.openstreetmap.org/#map=18/6.45722/3.38499). 
 
 - **CITY GRAPH**: We extracted the MultiDi graph of the city from through osmnx library. 
@@ -24,6 +24,13 @@ The two main sources of data collection are [Vienna Open Gov Data](https://www.d
 
 - **URBAN IMAGE DATA & ACCESSIBILITY**: Given the navigation component of the project, we needed to extract information relevant to pleasant and inclusive mobility within the city. Urban Image data included tree locations to identify green and shaded streets, urban density, comfort infrastructure - drinking fountains, public restrooms).
 For accessibility, we collected data on tactile sidewalks, acoustic signals, sidewalk widths, low-sidewalk points (for wheelchair mobility) and metro-elevator locations. These factors were scored on a continuous scale of 0 to 1.
+
+**Sources**:
+- Tree locations, comfort infrastructure, accessibility infrastructure: Vienna Open Gov Data;
+
+- Our integration of AI was to extract more generic forms of data…data that isn’t as direct in nature, more perceptual.We analysed some streetview image datasets, segmented them and measured their specific pixel count to measure a certain metric. (see AI section for detailed How to)
+
+
 
 
 
