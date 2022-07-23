@@ -39,12 +39,33 @@ Our integration of AI was to extract more generic and perceptual forms of data.W
 
 ## AI - IMAGE SEGMENTATION FOR DATA COLLECTION 
 
-
-
 ## MATCHING USERS WITH POINTS OF INTEREST(POI)
-- PROFILE
+To match users with relatable public establishments, the web app takes in two sets of inputs. The first set related to the user's profile include With A.EYE, You can find yourself within Vienna as a route which matching your preferences and diversity of Vienna. It takes only 3 steps. Answer simple questions, set start and end points, and boom, you can enjoy Vienna matched to your preferences
+- PROFILE: The first set related to the user's profile includes:
+    - Age: Child, Young, Elderly
+    - Gender: Male, Female, Others
+    - Ethnicity: Afro-Carribean, Asian, South-Asian, Middle-Eastern, Latin-American, European
+    - with Kids: Checkbox
+    - Special needs: Visual or physical.
+
 - PREFERENCES
+    - Formality: Slider input
+    - Urban Image: Slider input
+    - Urban Density: Slider input
+
+Given these inputs, the webapp outputs 20 POIs closest to the location of the user. On clicking on any of the POIs, the webapp generates a route to the selected POI. 
 
 ## HOW TO USE THIS REPO
+
+1. DATA COLLECTION
+
+2. GENERATE CITY GRAPH AND CALCULATE URBAN IMAGE & ACCESSIBILITY
+
+3. PUBLIC SPACE DIVERSITY 
+
+4. MATCH USERS TO MATCHING POINTS OF INTEREST
+
+5. PLOT ROUTE TO SELECTED POINT OF INTEREST
+
 ![Methodology overview](/assets/Diversity.png)
 [Work In Progress]
