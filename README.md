@@ -22,15 +22,19 @@ The two main sources of data collection are [Vienna Open Gov Data](https://www.d
 
 - **PUBLIC SPACE DATA (POINTS OF INTEREST - POI)**: Places where people meet and infrastructure serving basic needs are good indicator’s of a city’s multiculturalism. Therefore, we collect data on public and recreational Establishments Establishments, Such As Restaurants, Playgrounds, and Sports & Leisure Centres. 
 
+    **Metrics**
+    
+
 - **URBAN IMAGE DATA & ACCESSIBILITY**: Given the navigation component of the project, we needed to extract information relevant to pleasant and inclusive mobility within the city. Urban Image data included tree locations to identify green and shaded streets, urban density, comfort infrastructure - drinking fountains, public restrooms).
 For accessibility, we collected data on tactile sidewalks, acoustic signals, sidewalk widths, low-sidewalk points (for wheelchair mobility) and metro-elevator locations. These factors were scored on a continuous scale of 0 to 1.
 
     **Sources**:
-    - Tree locations, comfort infrastructure, accessibility infrastructure: Vienna Open Gov Data;
+    - Tree locations, comfort infrastructure, accessibility infrastructure: **Vienna Open Gov Data**;
+    - Urban density: **Image Segmentation of Street Views**
 
-    - Our integration of AI was to extract more generic forms of data…data that isn’t as direct in nature, more perceptual.We analysed some streetview image datasets, segmented them and measured their specific pixel count to measure a certain metric. (see AI section for detailed How to)
+Our integration of AI was to extract more generic forms of data…data that isn’t as direct in nature, more perceptual.We analysed some streetview image datasets, segmented them and measured their specific pixel count to measure a certain metric. (see AI section for detailed How-to). Open data may not be available in some locations. In such instances AI and Image segmentation methodology highlighted below becomes useful for data extraction. 
 
-
+## AI 
 
 
 
