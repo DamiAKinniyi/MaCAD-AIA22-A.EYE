@@ -19,6 +19,7 @@ The two main sources of data collection are [Vienna Open Gov Data](https://www.d
 - **CITY GRAPH**: We extracted the MultiDi graph of the city from through osmnx library. 
 
 - **DEMOGRAPHICS**: We collected demographic data available from open gov data. While the information is rich and shows varieties in religion, income, age demographics, There were certain generalisations that excluded minority groups. For example, gender was classified as male and female, and ethnicity was reduced to just austrian and foreigners. 
+
     **Sources**
     - Demographic data: **Vienna Open Gov Data** (see 'How to use this repo' for more info)
 
@@ -41,8 +42,8 @@ Our integration of AI was to extract more generic and perceptual forms of data.W
 
 
 ## MATCHING USERS WITH POINTS OF INTEREST(POI)
-### PROFILE
-### PREFERENCES
+- PROFILE
+- PREFERENCES
 
 ## HOW TO USE THIS REPO
 ![Methodology overview](/assets/Diversity.png)
