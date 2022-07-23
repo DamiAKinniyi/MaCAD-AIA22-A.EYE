@@ -1,6 +1,6 @@
 # **A.EYE**
 
-![Methodology overview](/assets/Diversity.png)
+![Methodology overview](/assets/AEye.gif)
 Many cities around the world are fast becoming more and more diverse, and increasingly multicultural;  a mosaic of culture and heritage, blending belief systems, habits, cultures, foods and style from all over the world; making for a rich and vibrant city where difference is celebrated. With increasing diversity, city dwellers will have to negotiate identities and their differences such as language, race, class and many other factors important for self identification, forging connection with city on a personal level, and on the macro scale,diversity representation in formal systems need to capture minority groups for intercultural integration, and inclusivity in cities. A.EYE is a tool that uncovers the multiculturalism of Vienna in the allocative scale, showing diversity and inclusivity in terms of age, gender, ethnicity and religion.
 
 ![Methodology overview](/assets/Solutions.png)
@@ -14,6 +14,7 @@ This project tackles the problem in two scales. One on hand, it maps the diversi
 The two main sources of data collection are vienna
 
 ### DEMOGRAPHICS
+![Methodology overview](/assets/Diversity.png)
 ### PUBLIC SPACE DATA (POINTS OF INTEREST - POI)
 ### URBAN IMAGE DATA
 ### ACCESSIBILITY
