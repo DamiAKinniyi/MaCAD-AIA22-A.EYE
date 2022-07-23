@@ -57,10 +57,10 @@ Given these inputs, the webapp outputs 20 POIs closest to the location of the us
 
 ## HOW TO USE THIS REPO
 
-1. **DATA COLLECTION**: Collect data from open gov sources as API endpoints (in json formats). All api endpoints for this project are located in 03.Colab/endpoints.json file.
+1. **DATA COLLECTION**: Collect data from open gov sources as API endpoints (in json formats). All api endpoints for this project are located in 03.Colab/endpoints.json.
 
 2. **GENERATE CITY GRAPH AND CALCULATE URBAN IMAGE & ACCESSIBILITY**: To generate city graph and metrics for accessibility and urban image, use 03.colab/city-graph_urban-metrics.ipynb
-    - Generate city graph. place name must be geocodable with admnistrative boundary. 
+    - To generate city graph, the place name must be geocodable with admnistrative boundary. 
     - Load api endpoints of data for different metrics under urban image. Alternatively, you could download data as json or csv and load into the colab. 
 The final output is a geojson file with normalised indices for various urban_image and accessibility parameters.
 
@@ -70,9 +70,11 @@ The final output is a geojson file with normalised indices for various urban_ima
         - 
     Refer to [OSM Map features](https://wiki.openstreetmap.org/wiki/Map_features) for a list of accessible features.
 
-4. MATCH USERS TO MATCHING POINTS OF INTEREST
+4. MATCH USERS TO POINTS OF INTEREST
+To generate matching points of interest, use livelayer01.py
 
 5. PLOT ROUTE TO SELECTED POINT OF INTEREST
+To generate route to selected POI, use livelayer02.py
 
 ![Methodology overview](/assets/Diversity.png)
 [Work In Progress]
