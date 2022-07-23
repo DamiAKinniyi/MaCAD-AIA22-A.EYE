@@ -70,6 +70,10 @@ The final output is a geojson file with normalised indices for various urban_ima
         - 
     Refer to [OSM Map features](https://wiki.openstreetmap.org/wiki/Map_features) for a list of accessible features.
 
+    This file outputs a geojson file to be used with 03.colab/poi_analysis.ipynb. This file outputs the diversity indices for ethnicity and gender for each municipality. The results for each indicator of diversity is returned as a geojson file. 
+
+    Save all geojson files to 01.Data/static layer folder
+
 4. MATCH USERS TO POINTS OF INTEREST
 To generate matching points of interest, use livelayer01.py
 
