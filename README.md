@@ -34,7 +34,7 @@ For accessibility, we collected data on tactile sidewalks, acoustic signals, sid
     - Tree locations, comfort infrastructure, accessibility infrastructure: **Vienna Open Gov Data**;
     - Urban density: **Image Segmentation of Street Views**
 
-Our integration of AI was to extract more generic forms of data…data that isn’t as direct in nature, more perceptual.We analysed some streetview image datasets, segmented them and measured their specific pixel count to measure a certain metric. (see AI section for detailed How-to). Open data may not be available in some locations. In such instances AI and Image segmentation methodology highlighted below becomes useful for data extraction. 
+Our integration of AI was to extract more generic and perceptual forms of data.We analysed some streetview image datasets, segmented them and measured their specific pixel count to measure a certain metric. (see AI section for detailed How-to). Open data may not be available in some locations. In such instances AI and Image segmentation methodology highlighted below becomes useful for data extraction. 
 
 ## AI 
 
