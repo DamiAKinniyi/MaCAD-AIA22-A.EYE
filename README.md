@@ -19,17 +19,11 @@ The two main sources of data collection are [Vienna Open Gov Data](https://www.d
 - CITY GRAPH
 We extracted the MultiDi graph of the city from through osmnx library. 
 
-- DEMOGRAPHICS
+- **DEMOGRAPHICS**: We collected demographic data available from open gov data. While the information is rich and shows varieties in religion, income, age demographics, There were certain generalisations that excluded minority groups. For example, gender was classified as male and female, and ethnicity was reduced to just austrian and foreigners. 
 
-We collected demographic data available from open gov data. While the information is rich and shows varieties in religion, income, age demographics, There were certain generalisations that excluded minority groups. For example, gender was classified as male and female, and ethnicity was reduced to just austrian and foreigners. 
+- **PUBLIC SPACE DATA (POINTS OF INTEREST - POI)**: Places where people meet and infrastructure serving basic needs are good indicator’s of a city’s multiculturalism. Therefore, we collect data on public and recreational Establishments Establishments, Such As Restaurants, Playgrounds, and Sports & Leisure Centres. 
 
-- PUBLIC SPACE DATA (POINTS OF INTEREST - POI)
-
-Places where people meet and infrastructure serving basic needs are good indicator’s of a city’s multiculturalism. Therefore, we collect data on public and recreational Establishments Establishments, Such As Restaurants, Playgrounds, and Sports & Leisure Centres. 
-
-- URBAN IMAGE DATA & ACCESSIBILITY
-
-Given the navigation component of the project, we needed to extract information relevant to pleasant and inclusive mobility within the city. Urban Image data included tree locations to identify green and shaded streets, urban density, comfort infrastructure - drinking fountains, public restrooms).
+- **URBAN IMAGE DATA & ACCESSIBILITY**: Given the navigation component of the project, we needed to extract information relevant to pleasant and inclusive mobility within the city. Urban Image data included tree locations to identify green and shaded streets, urban density, comfort infrastructure - drinking fountains, public restrooms).
 For accessibility, we collected data on tactile sidewalks, acoustic signals, sidewalk widths, low-sidewalk points (for wheelchair mobility) and metro-elevator locations. These factors were scored on a continuous scale of 0 to 1.
 
 
