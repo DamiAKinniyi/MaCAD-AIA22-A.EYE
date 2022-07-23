@@ -69,6 +69,7 @@ The final output is a geojson file with normalised indices for various urban_ima
 3. PUBLIC SPACE DIVERSITY 
 To generate Point of interest diversity data, use 03.colab/poi.ipynb
     - downlaod pois using osm tags {feature:values} to filter and select various types of public spaces. For this project, we used the following features and values:
+    
         - 
     Refer to [OSM Map features](https://wiki.openstreetmap.org/wiki/Map_features) for a list of accessible features.
 
