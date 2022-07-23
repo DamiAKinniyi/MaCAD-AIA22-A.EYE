@@ -3,10 +3,11 @@ Many cities around the world are fast becoming more and more diverse, and increa
 
 This project tackles the problem in two scales. One on hand, it maps the diversity of vienna, visually showing the ethnicity, age,gender and religious diversity of the city in static layers on a map. On the other hand, it provides a users with a tool that allows them find relatable spaces in the city. Designed for residents, tourists, and immigrants, the tool connects users to Points of Interests (POI) based on their profiles and preferences, and generates optimum routes to selected POIs
 
-
+image.png
 
 
 ## **DATA COLLECTION**
+The two main sources of data collection are vienna
 
 ### DEMOGRAPHICS
 ### PUBLIC SPACE DATA (POINTS OF INTEREST - POI)
