@@ -62,7 +62,7 @@ Given these inputs, the webapp outputs 20 POIs closest to the location of the us
 2. **GENERATE CITY GRAPH AND CALCULATE URBAN IMAGE & ACCESSIBILITY**: To generate city graph and metrics for accessibility and urban image, use 03.colab/city-graph_urban-metrics.ipynb
     - To generate city graph, the place name must be geocodable with admnistrative boundary. 
     - Load api endpoints of data for different metrics under urban image. Alternatively, you could download data as json or csv and load into the colab. 
-The final output is a geojson file with normalised indices for various urban_image and accessibility parameters.
+The final output is a geojson (city_graph.geojson) file with normalised indices for various urban_image and accessibility parameters. Save the city_graph.geojson into a google drive location. 
 
 3. **PUBLIC SPACE DIVERSITY**: To generate Point of interest diversity data, use 03.colab/poi.ipynb
     - downlaod POIs using osm tags {feature:values} to filter and select various types of public spaces. For this project, we used the following features and values:
@@ -70,16 +70,15 @@ The final output is a geojson file with normalised indices for various urban_ima
         - 
     Refer to [OSM Map features](https://wiki.openstreetmap.org/wiki/Map_features) for a list of accessible features.
 
-    This poi.ipynb file outputs a geojson file to be used with 03.colab/poi_analysis.ipynb. 
-    poi_analysis.ipynb returns outputs the diversity indices for ethnicity and gender for each municipality. The results for each diversity parameter is returned as a geojson file. 
+ This poi.ipynb file outputs a geojson file(poi.geojson) to be used with 03.colab/poi_analysis.ipynb. poi_analysis.ipynb returns outputs the diversity indices for ethnicity and gender for each municipality. The results for each diversity parameter is returned as a geojson file. Save the poi.geojson file to a google drive location.
 
     Save all geojson files to 01.Data/static layer folder for use on webapp.
 
 4. MATCH USERS TO POINTS OF INTEREST
-To generate matching points of interest, use POI_live_layer.py
+To generate matching points of interest, use POI_live_layer.py. Create a url link for poi.geojson and add link as the url location for poi_url in POI_live_layer.py
 
 5. PLOT ROUTE TO SELECTED POINT OF INTEREST
-To generate route to selected POI, use ROUTE_live_layer.py
+To generate route to selected POI, use ROUTE_live_layer.py. Create a url link for city_graph.geojson and add link as the url location for poi_url in ROUTE_live_layer.py
 
 ![Methodology overview](/assets/Diversity.png)
 [Work In Progress]
