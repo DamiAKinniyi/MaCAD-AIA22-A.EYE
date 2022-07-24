@@ -70,7 +70,11 @@ Section 03_Accessibility outputs two geojson files (acc_visual_friendly.geojson 
 3. **PUBLIC SPACE DIVERSITY**: To generate Point of interest diversity data, use 03.colab/poi.ipynb
     - downlaod POIs using osm tags {feature:values} to filter and select various types of public spaces. For this project, we used the following features and values:
 
-        - 
+        - wine_dine_tag={'amenity':['bar','pub', 'cafe', 'restaurant', 'fast_food','biergarten', 'food_court', 'ice_cream', 'arts_cemter', 'nightclub', 'brothel', 'casino', 'cinema', 'gambling', 'stripclub', 'swingerclub', 'theatre']}
+        - leisure_tag= {'leisure':True}
+        - shop_tag={'shop':True} #for analysis
+        - religion_tag={'amenity':'place_of_worship', 'religion':True}
+        - tourism_tag={'tourism':True}
     Refer to [OSM Map features](https://wiki.openstreetmap.org/wiki/Map_features) for a list of accessible features.
 
     This poi.ipynb file outputs a geojson file(poi.geojson) to be used with 03.colab/poi_analysis.ipynb. poi_analysis.ipynb returns outputs the diversity indices for ethnicity and gender for each municipality. The results for each diversity parameter is returned as a geojson file. Save the poi.geojson file to a google drive location. Save all geojson files to 01.Data/static layer folder for use on webapp.
