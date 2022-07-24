@@ -75,6 +75,7 @@ Section 03_Accessibility outputs two geojson files (acc_visual_friendly.geojson 
         - shop_tag={'shop':True} #for analysis
         - religion_tag={'amenity':'place_of_worship', 'religion':True}
         - tourism_tag={'tourism':True}
+   
     Refer to [OSM Map features](https://wiki.openstreetmap.org/wiki/Map_features) for a list of accessible features.
 
     This poi.ipynb file outputs a geojson file(poi.geojson) to be used with 03.colab/poi_analysis.ipynb. poi_analysis.ipynb returns outputs the diversity indices for ethnicity and gender for each municipality. The results for each diversity parameter is returned as a geojson file. Save the poi.geojson file to a google drive location. Save all geojson files to 01.Data/static layer folder for use on webapp.
