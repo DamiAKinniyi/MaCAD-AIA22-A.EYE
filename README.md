@@ -65,7 +65,7 @@ Given these inputs, the webapp outputs 20 POIs closest to the location of the us
 
 Section 02_Public Image and comfort outputs two geojsons (city_graph.geojson and city_nodes.geojson). city_graph.geojson contains city edges with normalised indices for various urban_image parameters. Save the geojson files into a google drive location (set google drive location as root parameter in city-graph_urban-metrics.ipynb).
 
-Section 03_Accessibility outputs two geojson files (acc_visual_friendly.geojson and acc_wheelchair_friendly.geojson).Save the two files into a google drive location as recommended for Section 02.
+Section 03_Accessibility outputs two geojson files (acc_visual_friendly.geojson and acc_wheelchair_friendly.geojson). Save the two files into a google drive location as recommended for Section 02.
 
 3. **PUBLIC SPACE DIVERSITY**: To generate Point of interest diversity data, use 03.colab/poi.ipynb
     - downlaod POIs using osm tags {feature:values} to filter and select various types of public spaces. For this project, we used the following features and values:
@@ -73,8 +73,7 @@ Section 03_Accessibility outputs two geojson files (acc_visual_friendly.geojson 
         - 
     Refer to [OSM Map features](https://wiki.openstreetmap.org/wiki/Map_features) for a list of accessible features.
 
-    This poi.ipynb file outputs a geojson file(poi.geojson) to be used with 03.colab/poi_analysis.ipynb. poi_analysis.ipynb returns outputs the diversity indices for ethnicity and gender for each municipality. The results for each diversity parameter is returned as a geojson file. Save the poi.geojson file to a google drive location.
-    Save all geojson files to 01.Data/static layer folder for use on webapp.
+    This poi.ipynb file outputs a geojson file(poi.geojson) to be used with 03.colab/poi_analysis.ipynb. poi_analysis.ipynb returns outputs the diversity indices for ethnicity and gender for each municipality. The results for each diversity parameter is returned as a geojson file. Save the poi.geojson file to a google drive location. Save all geojson files to 01.Data/static layer folder for use on webapp.
 
 4. MATCH USERS TO POINTS OF INTEREST
 To generate matching points of interest, use POI_live_layer.py. Create a url link for poi.geojson and add link as the url location for poi_url in POI_live_layer.py
