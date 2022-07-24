@@ -80,11 +80,9 @@ Given these inputs, the webapp outputs 20 POIs closest to the location of the us
 
     This poi.ipynb file outputs a geojson file(poi.geojson) to be used with 03.colab/poi_analysis.ipynb. poi_analysis.ipynb returns outputs the diversity indices for ethnicity and gender for each municipality. The results for each diversity parameter is returned as a geojson file. Save the poi.geojson file to a google drive location. Save all geojson files to 01.Data/static layer folder for use on webapp.
 
-4. MATCH USERS TO POINTS OF INTEREST
-To generate matching points of interest, use POI_live_layer.py. Create a url link for poi.geojson and add link as the url location for poi_url in POI_live_layer.py
+4. **MATCH USERS TO POINTS OF INTEREST**: To generate matching points of interest, use POI_live_layer.py. Create a url link for poi.geojson and add link as the url location for poi_url in POI_live_layer.py
 
-5. PLOT ROUTE TO SELECTED POINT OF INTEREST
-To generate route to selected POI, use ROUTE_live_layer.py. Create url links  for each of the following: city_graph.geojson, city_nodes.geojson, acc_wheelchair_friendly.geojson and acc_visual_friendly.geojson. Replace the links for each corresponding parameter in ROUTE_live_layer.py
+5. **PLOT ROUTE TO SELECTED POINT OF INTEREST**: To generate route to selected POI, use ROUTE_live_layer.py. Create url links  for each of the following: city_graph.geojson, city_nodes.geojson, acc_wheelchair_friendly.geojson and acc_visual_friendly.geojson. Replace the links for each corresponding parameter in ROUTE_live_layer.py
 
 ![Methodology overview](/assets/Diversity.png)
 [Work In Progress]
