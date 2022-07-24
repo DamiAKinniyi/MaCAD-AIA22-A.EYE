@@ -57,12 +57,12 @@ Given these inputs, the webapp outputs 20 POIs closest to the location of the us
 
 ## HOW TO USE THIS REPO
 
-1. **DATA COLLECTION**: Collect data from open gov sources as API endpoints (in json formats). All api endpoints for this project are located in 03.Colab/endpoints.json.
+1. **DATA COLLECTION**: Collect data from open gov sources as API endpoints (in json format). All api endpoints for this project are located in 03.Colab/endpoints.json.
 
 2. **GENERATE CITY GRAPH AND CALCULATE URBAN IMAGE & ACCESSIBILITY**: To generate city graph and metrics for accessibility and urban image, use 03.colab/city-graph_urban-metrics.ipynb
     - To generate city graph, the place name must be geocodable with admnistrative boundary. 
     - Load api endpoints of data for different metrics under urban image. Alternatively, you could download data as json or csv and load into the colab. 
-The final output is a geojson (city_graph.geojson) file with normalised indices for various urban_image and accessibility parameters. Save the city_graph.geojson into a google drive location. 
+The final output is a geojson (city_graph.geojson) file with normalised indices for various urban_image and accessibility parameters. Save the city_graph.geojson into a google drive location (set google drive location as root parameter in city-graph_urban-metrics.ipynb)
 
 3. **PUBLIC SPACE DIVERSITY**: To generate Point of interest diversity data, use 03.colab/poi.ipynb
     - downlaod POIs using osm tags {feature:values} to filter and select various types of public spaces. For this project, we used the following features and values:
