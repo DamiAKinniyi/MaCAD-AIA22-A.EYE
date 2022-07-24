@@ -63,9 +63,9 @@ Given these inputs, the webapp outputs 20 POIs closest to the location of the us
     - To generate city graph, the place name must be geocodable with admnistrative boundary. 
     - Load api endpoints of data for different metrics under urban image. Alternatively, you could download data as json or csv and load into the colab. 
 
-Section 02_Public Image and comfort outputs two geojsons (city_graph.geojson and city_nodes.geojson). city_graph.geojson contains city edges with normalised indices for various urban_image parameters. Save the geojson files into a google drive location (set google drive location as root parameter in city-graph_urban-metrics.ipynb).
+    Section 02_Public Image and comfort outputs two geojsons (city_graph.geojson and city_nodes.geojson). city_graph.geojson contains city edges with normalised indices for various urban_image parameters. Save the geojson files into a google drive location (set google drive location as root parameter in city-graph_urban-metrics.ipynb).
 
-Section 03_Accessibility outputs two geojson files (acc_visual_friendly.geojson and acc_wheelchair_friendly.geojson). Save the two files into a google drive location as recommended for Section 02.
+    Section 03_Accessibility outputs two geojson files (acc_visual_friendly.geojson and acc_wheelchair_friendly.geojson). Save the two files into a google drive location as recommended for Section 02.
 
 3. **PUBLIC SPACE DIVERSITY**: To generate Point of interest diversity data, use 03.colab/poi.ipynb
     - downlaod POIs using osm tags {feature:values} to filter and select various types of public spaces. For this project, we used the following features and values:
