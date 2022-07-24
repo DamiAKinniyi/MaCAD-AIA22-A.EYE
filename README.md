@@ -76,10 +76,10 @@ The final output is a geojson file with normalised indices for various urban_ima
     Save all geojson files to 01.Data/static layer folder for use on webapp.
 
 4. MATCH USERS TO POINTS OF INTEREST
-To generate matching points of interest, use livelayer01.py
+To generate matching points of interest, use POI_live_layer.py
 
 5. PLOT ROUTE TO SELECTED POINT OF INTEREST
-To generate route to selected POI, use livelayer02.py
+To generate route to selected POI, use ROUTE_live_layer.py
 
 ![Methodology overview](/assets/Diversity.png)
 [Work In Progress]
