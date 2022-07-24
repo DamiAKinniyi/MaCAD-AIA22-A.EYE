@@ -28,6 +28,8 @@ The two main sources of data collection are [Vienna Open Gov Data](https://www.d
     **Sources**
     - Restaurant Metadata: osmnx API (see 'How to use this repo' for detailed description)
 
+The diversity of the city's public establishment was calculated using [Hill's Numbers](https://en.wikipedia.org/wiki/Diversity_index). For this project, we have applied the formula to only the ethnic diversity parameter; however, it can be applied to any other parameter for which the diversity index is required. See (How to use this repo) below for more information.
+
 - **URBAN IMAGE DATA & ACCESSIBILITY**: Given the navigation component of the project, we needed to extract information relevant to pleasant and inclusive mobility within the city. Urban Image data included tree locations to identify green and shaded streets, urban density, comfort infrastructure - drinking fountains, public restrooms).
 For accessibility, we collected data on tactile sidewalks, acoustic signals, sidewalk widths, low-sidewalk points (for wheelchair mobility) and metro-elevator locations. These factors were scored on a continuous scale of 0 to 1.
 
@@ -78,11 +80,12 @@ Given these inputs, the webapp outputs 20 POIs closest to the location of the us
    
     Refer to [OSM Map features](https://wiki.openstreetmap.org/wiki/Map_features) for a list of accessible features.
 
-    This poi.ipynb file outputs a geojson file(poi.geojson) to be used with 03.colab/poi_analysis.ipynb. poi_analysis.ipynb returns outputs the diversity indices for ethnicity and gender for each municipality. The results for each diversity parameter is returned as a geojson file. Save the poi.geojson file to a google drive location. Save all geojson files to 01.Data/static layer folder for use on webapp.
+    - This poi.ipynb file outputs a geojson file(poi.geojson) to be used with 03.colab/POI_live_layer.py; Save the poi.geojson file to a google drive location. 
+    - The poi.ipynb file also returns geojson files for the diversity index and point files for the different diversity parameters chosen. Save these geojson files to 01.Data/static layer folder for use on webapp.
 
 4. **MATCH USERS TO POINTS OF INTEREST**: To generate matching points of interest, use POI_live_layer.py. Create a url link for poi.geojson and add link as the url location for poi_url in POI_live_layer.py
 
-5. **PLOT ROUTE TO SELECTED POINT OF INTEREST**: To generate route to selected POI, use ROUTE_live_layer.py. Create url links  for each of the following: city_graph.geojson, city_nodes.geojson, acc_wheelchair_friendly.geojson and acc_visual_friendly.geojson. Replace the links for each corresponding parameter in ROUTE_live_layer.py
+5. **PLOT ROUTE TO SELECTED POINT OF INTEREST**: To generate route to selected POI, use ROUTE_live_layer.py. Create url links for each of the following: city_graph.geojson, city_nodes.geojson, acc_wheelchair_friendly.geojson and acc_visual_friendly.geojson. Replace the links for each corresponding parameter in ROUTE_live_layer.py
 
 ![Methodology overview](/assets/Diversity.png)
 [Work In Progress]
