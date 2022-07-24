@@ -62,7 +62,10 @@ Given these inputs, the webapp outputs 20 POIs closest to the location of the us
 2. **GENERATE CITY GRAPH AND CALCULATE URBAN IMAGE & ACCESSIBILITY**: To generate city graph and metrics for accessibility and urban image, use 03.colab/city-graph_urban-metrics.ipynb
     - To generate city graph, the place name must be geocodable with admnistrative boundary. 
     - Load api endpoints of data for different metrics under urban image. Alternatively, you could download data as json or csv and load into the colab. 
-The final output is a geojson (city_graph.geojson) file with normalised indices for various urban_image and accessibility parameters. Save the city_graph.geojson into a google drive location (set google drive location as root parameter in city-graph_urban-metrics.ipynb)
+
+Section 02_Public Image and comfort outputs two geojsons (city_graph.geojson and city_nodes.geojson). city_graph.geojson contains city edges with normalised indices for various urban_image parameters. Save the geojson files into a google drive location (set google drive location as root parameter in city-graph_urban-metrics.ipynb).
+
+Section 03_Accessibility outputs two geojson files (acc_visual_friendly.geojson and acc_wheelchair_friendly.geojson).Save the two files into a google drive location as recommended for Section 02.
 
 3. **PUBLIC SPACE DIVERSITY**: To generate Point of interest diversity data, use 03.colab/poi.ipynb
     - downlaod POIs using osm tags {feature:values} to filter and select various types of public spaces. For this project, we used the following features and values:
@@ -77,7 +80,7 @@ The final output is a geojson (city_graph.geojson) file with normalised indices 
 To generate matching points of interest, use POI_live_layer.py. Create a url link for poi.geojson and add link as the url location for poi_url in POI_live_layer.py
 
 5. PLOT ROUTE TO SELECTED POINT OF INTEREST
-To generate route to selected POI, use ROUTE_live_layer.py. Create a url link for city_graph.geojson and add link as the url location for poi_url in ROUTE_live_layer.py
+To generate route to selected POI, use ROUTE_live_layer.py. Create url links  for each of the following: city_graph.geojson, city_nodes.geojson, acc_wheelchair_friendly.geojson and acc_visual_friendly.geojson. Replace the links for each corresponding parameter in ROUTE_live_layer.py
 
 ![Methodology overview](/assets/Diversity.png)
 [Work In Progress]
