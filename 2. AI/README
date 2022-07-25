@@ -1,0 +1,2 @@
+This section is a PSPNet implementation for semantic segmentation over Street View Imagery. The code is easy to use for training and testing on various datasets. It further quantifies the pixel coverage of segmented images to attribute it to the given coordinates of Vienna.
+To get started, simply use the Colab Notebook and link it to Street View Image Dataset. Create a folder for the output segmented images and link its path for pixel counting.
