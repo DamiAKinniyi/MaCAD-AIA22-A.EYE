@@ -40,6 +40,9 @@ For accessibility, we collected data on tactile sidewalks, acoustic signals, sid
 Our integration of AI was to extract more generic and perceptual forms of data.We analysed some streetview image datasets, segmented them and measured their specific pixel count to measure a certain metric. (see AI section for detailed How-to). Open data may not be available in some locations. In such instances AI and Image segmentation methodology highlighted below becomes useful for data extraction. 
 
 ## AI - IMAGE SEGMENTATION FOR DATA COLLECTION 
+1. **DATA COLLECTION**: Sourced Street View Imagery from government Open Data (which was a test dataset for public access, with limited city coverage). To make up for the data gap, additional Imagery was scraped from the web - Mapillary, in this case, through the entire city. Data is located in the /AI folder.
+
+2. **PSPNet for Semantic Segmentation**: To segment the streets for quantification and comparison of its Urban characteristics, specifically the density of Urban Infrastructure such as buildings, semantic segmentation was performed on the collected Street View Images.
 
 ## MATCHING USERS WITH POINTS OF INTEREST(POI)
 To match users with relatable public establishments, the web app takes in two sets of inputs. The first set related to the user's profile include With A.EYE, You can find yourself within Vienna as a route which matching your preferences and diversity of Vienna. It takes only 3 steps. Answer simple questions, set start and end points, and boom, you can enjoy Vienna matched to your preferences
